@@ -1,0 +1,12 @@
+.start-page {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  .start-menu {
+    background: $black-chocolate;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+}
