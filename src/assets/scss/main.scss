@@ -1,8 +1,20 @@
 /* ##### Variables ##### */
 @import "./variables/colors";
 
+/* ##### Mixins ##### */
+@import "./variables/mixins";
+
 /* ##### Global styles ##### */
 @import "./globalStyles.scss";
 
-/* ##### Pages ##### */
-@import "../../pages/start-page/scss/Start.scss";
+/* ##### Screens ##### */
+@import "../../screens/start-screen/scss/StartScreen.scss";
+
+/* ##### Parts ##### */
+@import "../../screens/game-screen/scss/GameScreen";
+@import "../../screens/game-screen/scss/TopBar";
+@import "../../screens/game-screen/scss/GameIntro";
+@import "../../screens/game-screen/scss/Game";
+
+/* ##### Components ##### */
+@import "../../components/button/scss/Button.scss";

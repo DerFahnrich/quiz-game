@@ -1,0 +1,13 @@
+.game-intro {
+  @include card;
+
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  text-align: center;
+
+  &:hover {
+    box-shadow: none;
+  }
+}

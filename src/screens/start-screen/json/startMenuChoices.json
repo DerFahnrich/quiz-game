@@ -1,8 +1,6 @@
 [
   {
+    "purpose": "START_GAME",
     "text": "Starta spelet"
-  },
-  {
-    "text": "Highscore"
   }
 ]

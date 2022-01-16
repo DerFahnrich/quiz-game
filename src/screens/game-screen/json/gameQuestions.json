@@ -1,0 +1,143 @@
+[
+  {
+    "question": "Vilken primitiv datatyp används för att lagra nummer?",
+    "answers": {
+      "a": "string",
+      "b": "number",
+      "c": "boolean",
+      "d": "array"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Hur många möjliga värden har den primitiva datatypen boolean?",
+    "answers": {
+      "a": "svar 2",
+      "b": "svar 3",
+      "c": "svar 4",
+      "d": "svar 1"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Vilken är den korrekta sytaxen för en vanlig for-loop med indexvärden?",
+    "answers": {
+      "a": "for (let i = 0: i < 10: i++) {}",
+      "b": "for (i = 0; i < 10; i++) {}",
+      "c": "for (let i = 0; i++;  i < 10) {}",
+      "d": "for (let i = 0; i < 10; i++) {}"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "Hur loopar man igenom ett objekt med hjälp av en for-loop?",
+    "answers": {
+      "a": "for (const key of object) {}",
+      "b": "for (const key in object) {}",
+      "c": "for (const key : object) {}",
+      "d": "foreach (const key in object) {}"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Hur många in-parametrar kan en funktion ha?",
+    "answers": {
+      "a": "1",
+      "b": "2",
+      "c": "4",
+      "d": "oändligt många"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "Hur många returvärden kan en funktion ha?",
+    "answers": {
+      "a": "1",
+      "b": "2",
+      "c": "4",
+      "d": "oändligt många"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Vilekn syntax är korrekt för en arrow-funktion?",
+    "answers": {
+      "a": "function writeVariable(a) {console.log(a)}",
+      "b": "const writeVariable = (a) => {console.log(a)}",
+      "c": "function writeVariable(a) => {console.log(a)}",
+      "d": "const writeVariable(a) => {console.log(a)}"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Vilket påstående är korrekt för en arrow-funktion?",
+    "answers": {
+      "a": "En arrow-funktion hoistas och har globalt scoop.",
+      "b": "En arrow-fuktion har eget this-scoop men snabbar exekvering",
+      "c": "En arrow-funktion saknar this-scoop och hoistas inte.",
+      "d": "En arrow-funktion är endast en alternativ syntax till en vanlig funktion."
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Vilket är det populäraste ramverket idag?",
+    "answers": {
+      "a": "React",
+      "b": "Angular",
+      "c": "Vue",
+      "d": "Mithril"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Vilket ramverk tillhör denna logo?",
+    "answers": {
+      "a": "React",
+      "b": "Angular",
+      "c": "Vue",
+      "d": "Mithril"
+    },
+    "imgage": "react.png",
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Vilken arrow-funktion används för att skapa en ny array från en existerande array fast med ett redigerat innehåll?",
+    "answers": {
+      "a": "slice()",
+      "b": ".filter()",
+      "c": ".splice()",
+      "d": ".map()"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "Vilket arrow-funktion används för att skicka in ett värde i början av en array?",
+    "answers": {
+      "a": ".shift()",
+      "b": ".push()",
+      "c": ".unshift()",
+      "d": ".pop()"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Hur ser syntaxen ut för att skapa en array?",
+    "answers": {
+      "a": "let array = {1, 2, 3, 4, 5};",
+      "b": "let array = [1, 2, 3, 4, 5];",
+      "c": "let array = new Array(){1, 2, 3, 4, 5};",
+      "d": "let array = (1, 2, 3, 4, 5);"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Vad kännetecknar et objekt?",
+    "answers": {
+      "a": "Ett objekt består av key-value par.",
+      "b": "Ett objekt är en två-dimensionell array.",
+      "c": "Ett objekt kan endast lagra avancerade värden.",
+      "d": "Ett objekt är en primitiv datatyp."
+    },
+    "correctAnswer": "a"
+  }
+]

@@ -1,0 +1,21 @@
+.top-bar {
+  align-items: center;
+  background: $black-chocolate;
+  box-shadow: 0 0 5px 2px $non-photo-blue;
+  display: grid;
+  grid-template-columns: 30% 1fr 30%;
+  height: 10vh;
+  padding: 0 2rem;
+  width: 100%;
+
+  .cancel {
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .logo {
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}

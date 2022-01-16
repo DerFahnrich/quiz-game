@@ -1,0 +1,12 @@
+.button {
+  background: $dark-liver-horses;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  justify-self: center;
+  padding: 0.5em 1em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

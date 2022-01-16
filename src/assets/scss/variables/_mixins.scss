@@ -1,0 +1,11 @@
+@mixin card {
+  background: $black-chocolate;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px $non-photo-blue;
+  padding: 2rem;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 5px 4px $non-photo-blue;
+  }
+}

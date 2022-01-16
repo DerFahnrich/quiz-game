@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import Start from "./pages/start-page/Start";
+import StartScreen from "./screens/start-screen/StartScreen";
+import GameScreen from "./screens/game-screen/GameScreen";
+
+import { GameContext } from "./context/GameProvider";
+import { TGameStatus } from "./context/types/TGameType";
+import {
+  GAME_OVER,
+  IDLE,
+  PLAYING,
+} from "./assets/constants/gameStatusConstants";
 
 const App = (): JSX.Element => {
-  return (
-    <>
-      <Start />
-    </>
-  );
+  const {
+    gameState: { gameStatus },
+  } = useContext(GameContext);
+
+  const renderScreen = (status: TGameStatus): JSX.Element => {
+    switch (status) {
+      case IDLE:
+        return <StartScreen />;
+      case PLAYING:
+        return <GameScreen />;
+      case GAME_OVER:
+      default:
+        return <StartScreen />;
+    }
+  };
+
+  return <>{renderScreen(gameStatus)}</>;
 };
 
 export default App;

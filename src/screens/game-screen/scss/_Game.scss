@@ -1,0 +1,53 @@
+.question-container {
+  @include card;
+
+  display: grid;
+  grid-gap: 10px;
+  font-size: 1.5rem;
+
+  .question {
+    text-align: center;
+
+    .question-text {
+      font-size: 2rem;
+    }
+  }
+
+  .question-answers {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .answer {
+      background: transparent;
+      display: flex;
+      border-radius: 10px;
+      margin: 0.5rem 0;
+      padding: 1em;
+      transition: 0.3s;
+      user-select: none;
+
+      &:hover {
+        background: $liver;
+        cursor: pointer;
+      }
+
+      &:active {
+        padding-top: calc(1em + 1px);
+        padding-bottom: calc(1em - 1px);
+      }
+
+      &.correct-answer {
+        background: green;
+      }
+
+      &.wrong-answer {
+        background: red;
+      }
+
+      .alternative {
+        font-weight: bold;
+        margin-right: 2em;
+      }
+    }
+  }
+}
