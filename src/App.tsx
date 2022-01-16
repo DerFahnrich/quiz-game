@@ -10,6 +10,8 @@ import {
   IDLE,
   PLAYING,
 } from "./assets/constants/gameStatusConstants";
+import GameOverScreen from "./screens/game-over-screen/GameOverScreen";
+import TopBar from "./screens/game-screen/parts/TopBar";
 
 const App = (): JSX.Element => {
   const {
@@ -23,12 +25,18 @@ const App = (): JSX.Element => {
       case PLAYING:
         return <GameScreen />;
       case GAME_OVER:
+        return <GameOverScreen />;
       default:
         return <StartScreen />;
     }
   };
 
-  return <>{renderScreen(gameStatus)}</>;
+  return (
+    <>
+      <TopBar />
+      {renderScreen(gameStatus)}
+    </>
+  );
 };
 
 export default App;

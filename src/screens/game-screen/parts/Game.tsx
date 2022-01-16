@@ -11,7 +11,10 @@ import useCountDown from "../../../hooks/useCountDown";
 import useCounter from "../../../hooks/useCounter";
 
 import { GameContext } from "../../../context/GameProvider";
-import { updateGameStatus } from "../../../context/gameActions";
+import {
+  updateGameStatus,
+  updateGameStatistics,
+} from "../../../context/gameActions";
 import { GAME_OVER } from "../../../assets/constants/gameStatusConstants";
 
 import IQuizQuestion from "../interfaces/IQuizQuestion";
@@ -78,20 +81,28 @@ const Game = ({ questions }: IGameProps): JSX.Element => {
         });
       }
     },
-
     [count, questions, stop]
   );
 
   const handleOnClick = useCallback(() => {
     if (count === questions.length - 1) {
+      gameDispatch(updateGameStatistics(statistics));
       gameDispatch(updateGameStatus(GAME_OVER));
     } else {
+      gameDispatch(updateGameStatistics(statistics));
       setNextButton(false);
       resetCounter();
       pauseGame.current = false;
       increment();
     }
-  }, [count, gameDispatch, increment, questions.length, resetCounter]);
+  }, [
+    count,
+    gameDispatch,
+    increment,
+    questions.length,
+    resetCounter,
+    statistics,
+  ]);
 
   const renderQuestion = (question: IQuizQuestion): JSX.Element => {
     return (
@@ -137,7 +148,7 @@ const Game = ({ questions }: IGameProps): JSX.Element => {
   return (
     <div className="question-container">
       {renderQuestion(questions[count])}
-      <div>{timerCount}:00</div>
+      <span className="timer">{timerCount}:00</span>
       {showNextButton && (
         <Button
           text={count === questions.length - 1 ? "Avsluta" : "Nästa fråga"}

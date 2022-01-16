@@ -6,3 +6,12 @@
     padding: 2rem;
   }
 }
+
+@include md-screen {
+  .game-screen {
+    .game-container {
+      margin: 0 auto;
+      max-width: 50rem;
+    }
+  }
+}

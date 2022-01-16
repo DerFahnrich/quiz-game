@@ -1,10 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import startMenuChoices from "./json/startMenuChoices.json";
 import IMenuChoice from "./interfaces/IMenuChoice";
 
 import { GameContext } from "../../context/GameProvider";
-import { updateGameStatus } from "../../context/gameActions";
+import {
+  updateGameStatus,
+  updateGameStatistics,
+} from "../../context/gameActions";
 
 import { START_GAME } from "../../assets/constants/startMenuConstants";
 import { PLAYING } from "../../assets/constants/gameStatusConstants";
@@ -23,6 +26,16 @@ const StartScreen = (): JSX.Element => {
         return console.log(menuChoice.text);
     }
   };
+
+  useEffect(() => {
+    gameDispatch(
+      updateGameStatistics({
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        unanswered: 0,
+      })
+    );
+  }, [gameDispatch]);
 
   return (
     <div className="start-page">

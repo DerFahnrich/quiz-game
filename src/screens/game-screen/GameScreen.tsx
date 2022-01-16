@@ -1,14 +1,10 @@
 import React, { useCallback, useContext } from "react";
 
-import TopBar from "./parts/TopBar";
 import GameIntro from "./parts/GameIntro";
 import Game from "./parts/Game";
-
-import { GameContext } from "../../context/GameProvider";
-
-import useBoolean from "../../hooks/useBoolean";
-
 import IQuizQuestion from "./interfaces/IQuizQuestion";
+import useBoolean from "../../hooks/useBoolean";
+import { GameContext } from "../../context/GameProvider";
 
 const GameScreen = (): JSX.Element => {
   const { value: playGame, toggle } = useBoolean(false);
@@ -41,7 +37,6 @@ const GameScreen = (): JSX.Element => {
 
   return (
     <div className="game-screen">
-      <TopBar />
       <div className="game-container">
         {playGame ? (
           <Game questions={pick10RandomQuestions()} />

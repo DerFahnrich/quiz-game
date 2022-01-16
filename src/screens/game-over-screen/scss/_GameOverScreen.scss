@@ -1,0 +1,24 @@
+.game-over-screen {
+  @include card;
+
+  display: grid;
+  grid-gap: 2rem;
+  margin: 4rem auto;
+  max-width: 40rem;
+
+  .game-over {
+    text-align: center;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .stats-container {
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.4rem;
+    }
+  }
+}

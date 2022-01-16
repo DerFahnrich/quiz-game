@@ -2,6 +2,7 @@
 @import "./variables/colors";
 
 /* ##### Mixins ##### */
+@import "./variables/breakpoints";
 @import "./variables/mixins";
 
 /* ##### Global styles ##### */
@@ -9,6 +10,7 @@
 
 /* ##### Screens ##### */
 @import "../../screens/start-screen/scss/StartScreen.scss";
+@import "../../screens/game-over-screen/scss/GameOverScreen";
 
 /* ##### Parts ##### */
 @import "../../screens/game-screen/scss/GameScreen";

@@ -2,7 +2,7 @@
   @include card;
 
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 2rem;
   font-size: 1.5rem;
 
   .question {
@@ -49,5 +49,13 @@
         margin-right: 2em;
       }
     }
+  }
+
+  .timer {
+    border: 2px solid $non-photo-blue;
+    border-radius: 10px;
+    font-size: 3rem;
+    justify-self: center;
+    padding: 0.5em;
   }
 }

@@ -1,13 +1,18 @@
 .game-intro {
   @include card;
 
-  box-shadow: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   text-align: center;
 
-  &:hover {
-    box-shadow: none;
+  .text {
+    font-size: 1.4rem;
+  }
+}
+
+@include md-screen {
+  .game-intro {
+    max-width: 50rem;
   }
 }
