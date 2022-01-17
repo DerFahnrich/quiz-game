@@ -4,7 +4,7 @@
   display: grid;
   grid-gap: 2rem;
   margin: 4rem auto;
-  max-width: 40rem;
+  width: 80%;
 
   .game-over {
     text-align: center;
@@ -20,5 +20,11 @@
       justify-content: space-between;
       font-size: 1.4rem;
     }
+  }
+}
+
+@include sm-screen {
+  .game-over-screen {
+    max-width: 40rem;
   }
 }

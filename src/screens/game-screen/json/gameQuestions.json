@@ -90,6 +90,18 @@
     "correctAnswer": "a"
   },
   {
+    "question": "Vem är detta och vad gjorde han?",
+    "answers": {
+      "a": "Evan You - Vues grundare",
+      "b": "Marc Zuckerberg - Facebooks grundare",
+      "c": "Jordan Valke - Reacts grundare",
+      "d": "Miško Hevery - Angulars grundare"
+    },
+    "image": "evanyou.jfif",
+
+    "correctAnswer": "a"
+  },
+  {
     "question": "Vilket ramverk tillhör denna logo?",
     "answers": {
       "a": "Vue",
@@ -97,7 +109,18 @@
       "c": "React",
       "d": "Angular"
     },
-    "imgage": "react.png",
+    "image": "react.png",
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Vad kallas denna kodsnudd?",
+    "answers": {
+      "a": "En förenklat if-sats",
+      "b": "Tilldelningsoperator",
+      "c": "Ternary Operator",
+      "d": "Jämförelseoperator"
+    },
+    "image": "ternary.png",
     "correctAnswer": "c"
   },
   {

@@ -6,7 +6,16 @@
   font-size: 1.5rem;
 
   .question {
+    max-width: 70rem;
     text-align: center;
+
+    .question-image {
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
 
     .question-text {
       font-size: 2rem;

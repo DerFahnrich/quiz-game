@@ -157,7 +157,7 @@ const Game = ({ questions }: IGameProps): JSX.Element => {
         <div className="question">
           {question.image && (
             <div className="question-image">
-              <img src="" alt="" />
+              <img src={`/images/${question.image}`} alt="" />
             </div>
           )}
           <span className="question-text">{question.question}</span>
