@@ -4,10 +4,8 @@ A simple quiz game where you get 10 random questions selected from a pool of pre
 
 ![Screenshot](startPage.png)
 ![Screenshot](IntroPage.png)
-![Screenshot](startPage.png)
 ![Screenshot](question.png)
 ![Screenshot](image-question.png)
-![Screenshot](startPage.png)
 ![Screenshot](questionTimeRunOut.png)
 ![Screenshot](questionUseLifeLine.png)
 ![Screenshot](gameOverScreen.png)
