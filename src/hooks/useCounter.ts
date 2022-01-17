@@ -4,7 +4,7 @@ interface ReturnType {
   count: number;
   increment: () => void;
   decrement: () => void;
-  reset: () => void;
+  reset: (newCount?: number) => void;
   setCount: Dispatch<SetStateAction<number>>;
 }
 
@@ -13,7 +13,8 @@ function useCounter(initialValue?: number): ReturnType {
 
   const increment = (): void => setCount((x) => x + 1);
   const decrement = (): void => setCount((x) => x - 1);
-  const reset = (): void => setCount(initialValue || 0);
+  const reset = (newCount?: number): void =>
+    setCount(newCount || initialValue || 0);
 
   return {
     count,

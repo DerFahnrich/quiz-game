@@ -52,12 +52,12 @@
   {
     "question": "Hur många returvärden kan en funktion ha?",
     "answers": {
-      "a": "1",
-      "b": "2",
-      "c": "4",
-      "d": "oändligt många"
+      "a": "4",
+      "b": "oändligt många",
+      "c": "1",
+      "d": "2"
     },
-    "correctAnswer": "a"
+    "correctAnswer": "c"
   },
   {
     "question": "Vilekn syntax är korrekt för en arrow-funktion?",
@@ -92,13 +92,13 @@
   {
     "question": "Vilket ramverk tillhör denna logo?",
     "answers": {
-      "a": "React",
-      "b": "Angular",
-      "c": "Vue",
-      "d": "Mithril"
+      "a": "Vue",
+      "b": "Mithril",
+      "c": "React",
+      "d": "Angular"
     },
     "imgage": "react.png",
-    "correctAnswer": "a"
+    "correctAnswer": "c"
   },
   {
     "question": "Vilken arrow-funktion används för att skapa en ny array från en existerande array fast med ett redigerat innehåll?",

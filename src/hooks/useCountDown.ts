@@ -10,7 +10,7 @@ interface UseCountdownType {
 interface CountdownHelpers {
   start: () => void;
   stop: () => void;
-  reset: () => void;
+  reset: (newCount?: number) => void;
 }
 
 /**
@@ -42,9 +42,9 @@ function useCountdown({
   /**
    * Will set running false and reset the seconds to initial value
    */
-  const reset = (): void => {
+  const reset = (newCount?: number): void => {
     stop();
-    resetCounter();
+    resetCounter(newCount);
   };
 
   useInterval(isIncrement ? increment : decrement, running ? interval : null);

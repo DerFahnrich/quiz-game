@@ -5,4 +5,5 @@ export default interface IStatistics {
   quickestAnswer?: number;
   slowestAnswer?: number;
   averageTime?: number;
+  answerSpeeds: number[];
 }

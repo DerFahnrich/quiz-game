@@ -21,6 +21,7 @@ const GameProvider = ({ children }: IGameProviderProps): JSX.Element => {
       correctAnswers: 0,
       incorrectAnswers: 0,
       unanswered: 0,
+      answerSpeeds: [],
     },
   });
 

@@ -1,0 +1,28 @@
+.life-lines {
+  display: flex;
+  justify-content: space-between;
+
+  .life-line {
+    background: $liver;
+    box-shadow: 0px 0px 5px 0px $rich-black;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.8rem;
+    transition: 0.3s;
+    user-select: none;
+
+    &:hover {
+      background: $dark-liver-horses;
+    }
+
+    &.used {
+      cursor: not-allowed;
+      opacity: 0.5;
+      text-decoration: line-through;
+
+      &:hover {
+        background: $liver;
+      }
+    }
+  }
+}
